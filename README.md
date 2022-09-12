@@ -1,1 +1,2 @@
 # project-2-azure
+[![Python application test with Github Actions](https://github.com/irisstream-udacity-azure/project-2-azure/actions/workflows/main.yml/badge.svg)](https://github.com/irisstream-udacity-azure/project-2-azure/actions/workflows/main.yml)
