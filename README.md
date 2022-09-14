@@ -1,51 +1,57 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+Python-based machine learning application using the Flask web framework. The model will predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* [Trello dashboard](https://trello.com/b/8Tt1zmdW/udacity-azuredevops)
+* [spreadsheet](https://docs.google.com/spreadsheets/d/1XFMMsncwQbGezandp_MkGfrga6Fc4ainkcWSCCbG25A/edit?usp=sharing)
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+![diagram](./images/diagram.png)
 
 * Project running on Azure App Service
+``` bash
+az webapp up --sku F1 -n <web_app_name>
+```
+
+![az webapp](./images/az_webapp.png)
 
 * Project cloned into Azure Cloud Shell
+![git clone](./images/git_clone_cloudshell.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
+![make all](./images/make_all.png)
+
 * Output of a test run
+
+![predict](./images/prediction.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
+![home page](./images/home_page.png)
+
 * Running Azure App Service from Azure Pipelines automatic deployment
+
+![azure devops deploy](./images/azure_devops.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+![test cloudshell](./images/test_cloudshell.png)
 
 * Output of streamed log files from deployed application
 
-> 
+![stream log](./images/stream_log.png) 
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+* Add more test to CI pipeline
+* Build infrastructure using IaC
+* Apply Blue-green deployment
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
-
-
+![Youtube link](https://)
